@@ -25,6 +25,8 @@ defmodule StarTrackWeb.ConnCase do
 
       # The default endpoint for testing
       @endpoint StarTrackWeb.Endpoint
+
+      import StarTrack.Game.Factory
     end
   end
 
