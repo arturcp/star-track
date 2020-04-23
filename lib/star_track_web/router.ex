@@ -11,6 +11,7 @@ defmodule StarTrackWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    resources "/characters", StarTrackWeb.CharacterController, only: [:index]
   end
 
   scope "/", StarTrackWeb do
