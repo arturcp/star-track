@@ -44,7 +44,8 @@ defmodule StarTrack.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:ex_machina, "~> 2.4", only: :test},
-      {:cors_plug, "~> 2.0"}
+      {:cors_plug, "~> 2.0"},
+      {:distillery, "~> 2.1", runtime: false}
     ]
   end
 
