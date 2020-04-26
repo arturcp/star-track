@@ -6,8 +6,8 @@ defmodule StarTrack.GameTest do
   describe "characters" do
     alias StarTrack.Game.Character
 
-    @valid_attrs %{biography: "some biography", name: "some name"}
-    @update_attrs %{biography: "some updated biography", name: "some updated name"}
+    @valid_attrs %{biography: "some biography", name: "some name", image_url: "http://site.com/image.jpg"}
+    @update_attrs %{biography: "some updated biography", name: "some updated name", image_url: "http://site.com/updated-image.jpg"}
     @invalid_attrs %{biography: nil, name: nil}
 
     def character_fixture(attrs \\ %{}) do

@@ -12,7 +12,9 @@ defmodule StarTrackWeb.CharacterControllerTest do
         "name" => character.name,
         "biography" => character.biography,
         "inserted_at" => NaiveDateTime.to_iso8601(character.inserted_at),
-        "updated_at" => NaiveDateTime.to_iso8601(character.updated_at)
+        "updated_at" => NaiveDateTime.to_iso8601(character.updated_at),
+        "id" => character.id,
+        "image_url" => character.image_url
       }]
     }
   end
