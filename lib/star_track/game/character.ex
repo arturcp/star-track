@@ -5,6 +5,7 @@ defmodule StarTrack.Game.Character do
   schema "characters" do
     field :biography, :string
     field :name, :string
+    field :image_url, :string
 
     timestamps()
   end
@@ -12,7 +13,7 @@ defmodule StarTrack.Game.Character do
   @doc false
   def changeset(character, attrs) do
     character
-    |> cast(attrs, [:name, :biography])
-    |> validate_required([:name, :biography])
+    |> cast(attrs, [:name, :biography, :image_url])
+    |> validate_required([:name, :biography, :image_url])
   end
 end

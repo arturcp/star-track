@@ -13,7 +13,8 @@ defmodule StarTrackWeb.CharacterView do
       name: character.name,
       biography: character.biography,
       inserted_at: character.inserted_at,
-      updated_at: character.updated_at
+      updated_at: character.updated_at,
+      image_url: character.image_url
     }
   end
 end
