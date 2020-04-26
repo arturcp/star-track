@@ -9,6 +9,7 @@ defmodule StarTrackWeb.CharacterView do
 
   def character_json(character) do
     %{
+      id: character.id,
       name: character.name,
       biography: character.biography,
       inserted_at: character.inserted_at,
