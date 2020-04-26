@@ -1,4 +1,4 @@
-# StarTrack
+# Star Track
 
 To start your Phoenix server:
 
