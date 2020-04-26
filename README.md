@@ -18,3 +18,15 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+## CORS
+
+In the local environment, if you try to access the URL the from Star Track Web
+project, you may receive this error:
+
+```
+Access to XMLHttpRequest at 'http://localhost:4000/characters' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+```
+
+To solve that, this API needs to configure CORS. For a more detailed reference,
+check [this article](https://medium.com/@yagoazedias/how-to-configure-cors-in-your-phoenix-application-5ef0234bc25f) and [this git repository](https://github.com/mschae/cors_plug).
