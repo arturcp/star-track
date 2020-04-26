@@ -30,3 +30,13 @@ Access to XMLHttpRequest at 'http://localhost:4000/characters' from origin 'http
 
 To solve that, this API needs to configure CORS. For a more detailed reference,
 check [this article](https://medium.com/@yagoazedias/how-to-configure-cors-in-your-phoenix-application-5ef0234bc25f) and [this git repository](https://github.com/mschae/cors_plug).
+
+## Deploy
+
+We use Gigalixir as our host. To learn how to deploy to Gigalixir, follow these
+instrutions:
+
+https://elixircasts.io/deploying-with-gigalixir
+
+We are using [Distillery](https://github.com/bitwalker/distillery) to deploy the
+project.
